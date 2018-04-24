@@ -8,17 +8,17 @@
     <meta name="description" content="Lollypop studio test task">
     <meta name="keywords" content="test, task, front-end, coding">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="assets/css/style.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway:300,300i" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Raleway:300,300i,400" rel="stylesheet">
   </head>
   <body>
     <!-- main wrapper -->
     <div class="wrapper">
       <!-- top navigation -->
       <div class="topnav">
-        <div class="topnav-inner">
+        <div class="topnav-inner container">
           <!-- logo -->
-          <img src="assets/img/logo.png" height="42" width="216" class="topnav-logo" alt="Factspan">
+          <img src="assets/img/logo.png" height="36" width="185" class="topnav-logo" alt="Factspan">
           <!-- logo ends-->
 
           <!-- menu button -->
@@ -28,6 +28,7 @@
           <!-- side navigation -->
           <div class="sidenav-wrapper">
             <nav class="sidenav">
+              <button class="sidenav-close"><img src="assets/img/close.png" height="21" width="21" alt="Close"></button>
               <a href="/about" class="sidenav-links">About Us</a>
               <a href="/pricing" class="sidenav-links">Pricing</a>
               <a href="/faq" class="sidenav-links">FAQ</a>
@@ -41,12 +42,46 @@
       <!-- top navigation ends -->
       
       <!-- banner -->
-      <div class="banner"></div>
+      <div class="banner">
+        
+        <!-- banner controls -->
+        <!-- banner controls ends -->
+        
+        <!-- slides -->
+        <ul class="slides">
+
+          <!-- slide 1 -->
+          <li class="slide slide-1" id="slide-1">
+            <!-- slide html content -->
+            <div class="slide-content">
+              <div class="content-container">
+                <h2 class="callout left">
+                  <span class="title">Are you</span>
+                  Looking for insights
+                  <span class="break">for success?</span>
+                </h2>
+                <h2 class="callout right">
+                  <span class="title">We unlock</span>
+                  The intelligence that's
+                  <span class="break">hidden in your data.</span>
+                </h2>
+                <h1 class="message">We empower strategic decision making</h1>
+              </div>
+            </div>
+            <!-- slide background image -->
+            <img src="assets/img/banner-slide-1.jpg" width="1300" height="570" class="slide-bg">
+          </li>
+          <!-- slide 1 ends -->
+
+        </ul>
+        <!-- slides ends -->
+
+      </div>
       <!-- banner ends -->
     </div>
     <!-- main wrapper ends -->
     <script src="assets/components/jquery/jquery.min.js"></script>
-    // <script src="assets/components/hammer/hammer.min.js"></script>
-    // <script src="assets/js/scripts.js"></script>
+    <!-- <script src="assets/components/hammer/hammer.min.js"></script> -->
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>

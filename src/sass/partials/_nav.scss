@@ -1,10 +1,113 @@
-.nav {
-  ul {
-    list-style: none;
-    li {
-      a {
+@import "../modules/_vars.scss";
 
-      }
+.topnav {
+  background: $white;
+  .topnav-inner {
+    padding: 20px 0;
+    @extend .clear
+  }
+  .topnav-logo {
+    display: block;
+    float: left;
+  }
+  .sidenav-toggle {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    display: block;
+    float: right;
+    cursor: pointer;
+    height: 36px;
+    img {
+      display: block;
+    }
+  }
+}
+
+.sidenav-wrapper {
+  position: fixed;
+  z-index: -11;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background: rgba($dark-blue, 0.3);
+  transition: opacity 0.5s ease;
+  &.active {
+    z-index: 11;
+    opacity: 1;
+  }
+  .sidenav {
+    position: absolute;
+    right: -300px;
+    top: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 20px 10px;
+    transition: all 0.5s ease;
+    background: $light;
+  }
+  &.active .sidenav {
+    right: 0;
+  }
+  .sidenav-links {
+    font-family: $title-font;
+    text-transform: uppercase;
+    color: $dark-blue;
+    display: block;
+    padding: 20px;
+    text-align: right;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    &:hover {
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+  .sidenav-close {
+    appearance: none;
+    border: 0;
+    background: $white;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 6px;
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 0 rgba($grey-40,0.1);
+    &:after, &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      box-shadow: 0 0 5px 0 rgba($grey-40,0.1);
+      background: $white;
+    }
+    &:after {
+      height: 24px;
+      width: 24px;
+      border-radius: 4px;
+      bottom: -21px;
+      right: -20px;
+    }
+    &:before {
+      height: 14px;
+      width: 14px;
+      border-radius: 3px;
+      bottom: -34px;
+      right: 0;
+    }
+    img {
+      display: block;
+      margin: auto;
     }
   }
 }
