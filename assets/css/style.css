@@ -936,19 +936,31 @@ textarea {
 }
 
 /* line 3, ../../src/sass/partials/_nav.scss */
+.wrapper {
+  padding-top: 68px;
+}
+
+/* line 7, ../../src/sass/partials/_nav.scss */
 .topnav {
   background: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
-/* line 5, ../../src/sass/partials/_nav.scss */
+/* line 14, ../../src/sass/partials/_nav.scss */
 .topnav .topnav-inner {
-  padding: 20px 0;
+  padding: 20px;
 }
-/* line 9, ../../src/sass/partials/_nav.scss */
+/* line 18, ../../src/sass/partials/_nav.scss */
 .topnav .topnav-logo {
   display: block;
   float: left;
+  height: 28px;
+  width: auto;
 }
-/* line 13, ../../src/sass/partials/_nav.scss */
+/* line 24, ../../src/sass/partials/_nav.scss */
 .topnav .sidenav-toggle {
   appearance: none;
   border: 0;
@@ -959,14 +971,33 @@ textarea {
   display: block;
   float: right;
   cursor: pointer;
-  height: 36px;
+  height: 28px;
 }
-/* line 24, ../../src/sass/partials/_nav.scss */
+/* line 35, ../../src/sass/partials/_nav.scss */
 .topnav .sidenav-toggle img {
   display: block;
 }
 
-/* line 30, ../../src/sass/partials/_nav.scss */
+@media screen and (min-width: 768px) {
+  /* line 42, ../../src/sass/partials/_nav.scss */
+  .wrapper {
+    padding-top: 76px;
+  }
+
+  /* line 46, ../../src/sass/partials/_nav.scss */
+  .topnav .topnav-inner {
+    padding: 20px 0;
+  }
+  /* line 49, ../../src/sass/partials/_nav.scss */
+  .topnav .topnav-logo {
+    height: 36px;
+  }
+  /* line 52, ../../src/sass/partials/_nav.scss */
+  .topnav .sidenav-toggle {
+    height: 36px;
+  }
+}
+/* line 58, ../../src/sass/partials/_nav.scss */
 .sidenav-wrapper {
   position: fixed;
   z-index: -11;
@@ -978,12 +1009,12 @@ textarea {
   background: rgba(40, 53, 89, 0.3);
   transition: opacity 0.5s ease;
 }
-/* line 40, ../../src/sass/partials/_nav.scss */
+/* line 68, ../../src/sass/partials/_nav.scss */
 .sidenav-wrapper.active {
   z-index: 11;
   opacity: 1;
 }
-/* line 44, ../../src/sass/partials/_nav.scss */
+/* line 72, ../../src/sass/partials/_nav.scss */
 .sidenav-wrapper .sidenav {
   position: absolute;
   right: -300px;
@@ -994,11 +1025,11 @@ textarea {
   transition: all 0.5s ease;
   background: #F5F5F5;
 }
-/* line 54, ../../src/sass/partials/_nav.scss */
+/* line 82, ../../src/sass/partials/_nav.scss */
 .sidenav-wrapper.active .sidenav {
   right: 0;
 }
-/* line 57, ../../src/sass/partials/_nav.scss */
+/* line 85, ../../src/sass/partials/_nav.scss */
 .sidenav-wrapper .sidenav-links {
   font-family: "Oswald", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -1009,12 +1040,12 @@ textarea {
   font-size: 1.125rem;
   letter-spacing: 1px;
 }
-/* line 66, ../../src/sass/partials/_nav.scss */
+/* line 94, ../../src/sass/partials/_nav.scss */
 .sidenav-wrapper .sidenav-links:hover {
   color: #E6642B;
   text-decoration: none;
 }
-/* line 71, ../../src/sass/partials/_nav.scss */
+/* line 99, ../../src/sass/partials/_nav.scss */
 .sidenav-wrapper .sidenav-close {
   appearance: none;
   border: 0;
@@ -1032,7 +1063,7 @@ textarea {
   border-radius: 6px;
   box-shadow: 0 0 5px 0 rgba(184, 184, 184, 0.1);
 }
-/* line 87, ../../src/sass/partials/_nav.scss */
+/* line 115, ../../src/sass/partials/_nav.scss */
 .sidenav-wrapper .sidenav-close:after, .sidenav-wrapper .sidenav-close:before {
   content: " ";
   display: block;
@@ -1040,7 +1071,7 @@ textarea {
   box-shadow: 0 0 5px 0 rgba(184, 184, 184, 0.1);
   background: #FFFFFF;
 }
-/* line 94, ../../src/sass/partials/_nav.scss */
+/* line 122, ../../src/sass/partials/_nav.scss */
 .sidenav-wrapper .sidenav-close:after {
   height: 24px;
   width: 24px;
@@ -1048,7 +1079,7 @@ textarea {
   bottom: -21px;
   right: -20px;
 }
-/* line 101, ../../src/sass/partials/_nav.scss */
+/* line 129, ../../src/sass/partials/_nav.scss */
 .sidenav-wrapper .sidenav-close:before {
   height: 14px;
   width: 14px;
@@ -1056,7 +1087,7 @@ textarea {
   bottom: -34px;
   right: 0;
 }
-/* line 108, ../../src/sass/partials/_nav.scss */
+/* line 136, ../../src/sass/partials/_nav.scss */
 .sidenav-wrapper .sidenav-close img {
   display: block;
   margin: auto;
