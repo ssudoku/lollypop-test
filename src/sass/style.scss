@@ -1,13 +1,16 @@
 @import 'modules/_defaults.scss';
 @import 'modules/_grid.scss';
 @import 'modules/_normalize.scss';
-@import "modules/_animations.scss";
 @import "modules/_clearfix.scss";
 @import "modules/_vars.scss";
 
 @import "partials/_nav.scss";
 @import "partials/_banner.scss";
 @import "partials/_main.scss";
+@import "partials/_testimonials.scss";
+@import "partials/_explore.scss";
+@import "partials/_contact.scss";
+@import "partials/_footer.scss";
 
 * {
   box-sizing: border-box;
@@ -46,12 +49,11 @@ a {
   color: $orange-dark;
 }
 
-.testimonials {
-  background: $orange-dark;
-  color: $white;
-  .testi-control {
-    position:absolute;
-    opacity: 0;
-    pointer-events: none;
-  }
+.section-title {
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  color: $violet;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 80px; 
 }
