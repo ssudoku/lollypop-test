@@ -9,7 +9,7 @@
     <meta name="keywords" content="test, task, front-end, coding">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Raleway:300,300i,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,500|Raleway:300,300i,400" rel="stylesheet">
   </head>
   <body>
     <!-- main wrapper -->
@@ -45,6 +45,17 @@
       <div class="banner">
         
         <!-- banner controls -->
+        <input type="radio" name="slide-control" class="slide-control" checked id="for-slide-1">
+        <input type="radio" name="slide-control" class="slide-control" id="for-slide-2">
+        <input type="radio" name="slide-control" class="slide-control" id="for-slide-3">
+        <input type="radio" name="slide-control" class="slide-control" id="for-slide-4">
+
+        <div class="slide-toggles">
+          <label class="control-label" for="for-slide-1"></label>
+          <label class="control-label" for="for-slide-2"></label>
+          <label class="control-label" for="for-slide-3"></label>
+          <label class="control-label" for="for-slide-4"></label>
+        </div>
         <!-- banner controls ends -->
         
         <!-- slides -->
@@ -73,11 +84,153 @@
           </li>
           <!-- slide 1 ends -->
 
+          <!-- slide 2 -->
+          <li class="slide slide-2" id="slide-2">
+            <!-- slide html content -->
+            <div class="slide-content">
+            </div>
+            <!-- slide background image -->
+            <img src="assets/img/banner-slide-2.jpg" width="1300" height="570" class="slide-bg">
+          </li>
+          <!-- slide 2 ends -->
+
+          <!-- slide 3 -->
+          <li class="slide slide-3" id="slide-3">
+            <!-- slide html content -->
+            <div class="slide-content">
+            </div>
+            <!-- slide background image -->
+            <img src="assets/img/banner-slide-3.jpg" width="1300" height="570" class="slide-bg">
+          </li>
+          <!-- slide 3 ends -->
+
+          <!-- slide 4 -->
+          <li class="slide slide-4" id="slide-4">
+            <!-- slide html content -->
+            <div class="slide-content">
+            </div>
+            <!-- slide background image -->
+            <img src="assets/img/banner-slide-4.jpg" width="1300" height="570" class="slide-bg">
+          </li>
+          <!-- slide 4 ends -->
+
         </ul>
         <!-- slides ends -->
 
       </div>
       <!-- banner ends -->
+
+      <!-- panel 1 -->
+      <main class="panel container panel-1">
+        <div class="row">
+          <article class="panel-content col-sm-7 col-md-6">
+            <div class="content-box">
+              <h2 class="panel-title">We turn <span class="emph">data into results</span></h2>
+              <div class="row">
+                <p class="col-sm-6 text">Using bayesian classifiers, we created an API that categorised images with</p>
+                <p class="col-sm-6 data">
+                  <span class="data-num">97</span>
+                  <span class="data-text"><span class="perc">%</span> accuracy</span>
+                </p>
+              </div>
+            </div>
+          </article>
+          <aside class="panel-graphics col-sm-5 col-md-6">
+            <img src="assets/img/panel-1.png" class="panel-img" height="196" width="377">
+          </aside>
+        </div>
+      </main>
+      <!-- panel 1 ends -->
+
+      <!-- panel 2 -->
+      <main class="panel container panel-2">
+        <div class="row">
+          <aside class="panel-graphics col-sm-5">
+            <img src="assets/img/panel-2.png" class="panel-img" height="282" width="309">
+          </aside>
+          <article class="panel-content col-sm-7">
+            <div class="content-box">
+              <h2 class="panel-title">Factspan is a diverse,<br><span class="emph">multi-disciplined</span> team</h2>
+              <p class="text">One that understands business just as well as we understand Big Data analytics. You’ll get tailored visualizations to make data more digestible and personal advice on how that data can inform your strategy.</p>
+              <p class="emph">It’s a tailored approach for more tangible, high-quality performance.</p>
+            </div>
+          </article>
+        </div>
+      </main>
+      <!-- panel 2 ends -->
+
+      <div class="process-title">
+        <h2 class="section-title">We span the entire spectrum of <br> big data analytics.</h2>
+      </div>
+
+      <!-- process -->
+      <div class="process">
+        <div class="panels container">
+          <div class="process-panels left">
+            <span class="panel-decor">&nbsp;</span>
+            <h3 class="panel-title">Data Engineering</h3>
+            <p class="panel-text">We’ll design an infrastructure to make analysis and data processing efficient, then help you cope with growing pools of data without compromising on accessibility.</p>
+          </div>
+          <div class="process-panels right">
+            <h3 class="panel-title">Descriptive</h3>
+            <p class="panel-text">Through advanced visualisations and reporting, we’ll help you understand what has happened historically in your business and what is happening at this moment – so you can react and respond faster.</p>
+          </div>
+          <div class="process-panels left">
+            <h3 class="panel-title">Diagonostic</h3>
+            <p class="panel-text">Powerful insights begin with patterns. Our experts will help you find the trends in your large-scale historic data, improving your knowledge of change, performance, and efficiency.</p>
+          </div>
+          <div class="process-panels right">
+            <h3 class="panel-title">Predictive</h3>
+            <p class="panel-text">The best decisions are made early. So we’ll give you increased foresight, using machine learning to make informed, statistically-robust predictions about what will happen next.</p>
+          </div>
+          <div class="process-panels left">
+            <h3 class="panel-title">Prescriptive</h3>
+            <p class="panel-text">Know what to do next. Using machine learning and artificial intelligence, we can asses every historic pattern, every potential opportunity and risk, then advise you on what you should do.</p>
+          </div>
+          <div class="process-panels right goal">
+            <p class="panel-text large">And, crucially, we’re flexible. With a skillset like ours, <span class="emph">we’ve become trusted problem solvers for a wide range of challenges,</span> obstacles, and organisational goals.</p>
+          </div>
+        </div>
+        <div class="process-bg">
+          <img src="assets/img/process.jpg" class="bg-img" width="626" height="2441">
+        </div>
+      </div>
+      <!-- process ends -->
+
+      <!-- testimonials -->
+        <div class="testimonials container">
+          <!-- hidden radio buttons to control navigation -->
+          <input type="radio" class="testi-control" name="testi-control" id="testi-1" checked>
+          <input type="radio" class="testi-control" name="testi-control" id="testi-2">
+          <input type="radio" class="testi-control" name="testi-control" id="testi-3">
+          <input type="radio" class="testi-control" name="testi-control" id="testi-4">
+
+          <!-- arrows (left) -->
+          <div class="arrows left">
+            <label class="testi-arrows" for="testi-1"><img src="assets/img/arrow-left.png"></label>
+            <label class="testi-arrows" for="testi-2"><img src="assets/img/arrow-left.png"></label>
+            <label class="testi-arrows" for="testi-3"><img src="assets/img/arrow-left.png"></label>
+            <label class="testi-arrows" for="testi-4"><img src="assets/img/arrow-left.png"></label>
+          </div>
+          <!-- arrows (left) ends-->
+
+          <!-- testi slides -->
+          <ul class="slides">
+          </ul>
+          <!-- testi slides ends -->
+
+          <!-- arrows (left) -->
+          <div class="arrows right">
+            <label class="testi-arrows" for="testi-1"><img src="assets/img/arrow-left.png"></label>
+            <label class="testi-arrows" for="testi-2"><img src="assets/img/arrow-left.png"></label>
+            <label class="testi-arrows" for="testi-3"><img src="assets/img/arrow-left.png"></label>
+            <label class="testi-arrows" for="testi-4"><img src="assets/img/arrow-left.png"></label>
+          </div>
+          <!-- arrows (left) ends-->
+
+        </div>
+      <!-- testimonials ends -->
+
     </div>
     <!-- main wrapper ends -->
     <script src="assets/components/jquery/jquery.min.js"></script>
